@@ -159,7 +159,7 @@ function Library.Main(text : string)
         Position = UDim2.new(1,-55,0,0);
         BorderSizePixel = 0;
         BackgroundTransparency = 1;
-        Image = "rbxassetid://10587654910";
+        Image = "rbxassetid://15102383203";
         ImageTransparency = 0;
         ImageColor3 = Color3.fromRGB(255,255,255);
         ScaleType = Enum.ScaleType["Crop"];
@@ -197,7 +197,7 @@ function Library.Main(text : string)
             Position = UDim2.new(0.5,0,0.5,0);
             BorderSizePixel = 0;
             BackgroundTransparency = 1;
-            Image = "rbxassetid://10562470318";
+            Image = "rbxassetid://15102383203";
             ImageTransparency = 1;
             ImageColor3 = Color3.fromRGB(255,255,255);
             ScaleType = Enum.ScaleType["Crop"];
