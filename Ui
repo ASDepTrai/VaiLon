@@ -116,7 +116,7 @@ local Library = {
 local screeng = make("ScreenGui",{
     Parent = game.CoreGui;
     Name = "Ocerlib";
-    Enabled = true;
+    Enabled = false;
     IgnoreGuiInset = true
 })
 
@@ -124,7 +124,7 @@ local screeng = make("ScreenGui",{
 
 
 
-local pagescount = 5
+local pagescount = 3
 
 local TweenService = game:GetService("TweenService")
 
