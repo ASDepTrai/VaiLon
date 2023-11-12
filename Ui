@@ -124,7 +124,7 @@ local screeng = make("ScreenGui",{
 
 
 
-local pagescount = 0
+local pagescount = 5
 
 local TweenService = game:GetService("TweenService")
 
