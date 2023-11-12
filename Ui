@@ -120,8 +120,6 @@ local screeng = make("ScreenGui",{
     IgnoreGuiInset = true
 })
 
-syn.protect_gui(screeng)
-
 
 
 
