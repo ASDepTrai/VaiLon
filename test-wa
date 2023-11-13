@@ -2,10 +2,9 @@ if not game:IsLoaded() then
         game.Loaded:wait() 
 end
  
- --Main:TweenSize(UDim2.new(0, 656, 0, 400),"Out","Quad",0.4,true)
- --Main:TweenSize(UDim2.new(0, 656, 0, 300),"Out","Quad",0.4,true)
- Main:TweenSize(UDim2.new(0, 480, 0, 280),"Out","Quad",0.4,true)
--- extra credits to twink marie
+
+print("discord.gg/W-azure")
+
 local library = {}
 local request = request or http_request or (identifyexecutor() == "Synapse X" and syn.request) or (http and http.request)
 loadstring(request({Url="https://raw.githubusercontent.com/cypherdh/Script-Library/main/InstanceProtect",Method="GET"}).Body)()
