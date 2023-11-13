@@ -3,7 +3,7 @@ if not game:IsLoaded() then
 end
  
 
-print("discord.gg/W-azure")
+
 
 local library = {}
 local request = request or http_request or (identifyexecutor() == "Synapse X" and syn.request) or (http and http.request)
@@ -101,6 +101,10 @@ function library:CreateWindow(name, version, icon)
         Bar_2.BorderSizePixel = 0
         Bar_2.Position = UDim2.new(1, -24, 0, 0)
         Bar_2.Size = UDim2.new(0, 18, 1, 0)
+
+
+
+
 
 
 
@@ -234,10 +238,8 @@ CloseButton.MouseButton1Click:Connect(function()
                 end
         end)
 
-
-
-
-
+ProtectInstance(AnSiy)
+ProtectInstance(CloseButton)
 
 
 
