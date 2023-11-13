@@ -114,9 +114,10 @@ function library:CreateWindow(name, version, icon)
 
 
 
+Ligi = "15338043379"
 
-
-
+function library:MobileToggleUi(A_Logo)
+A_Logo = A_Logo or Ligi
 local AnSit = Instance.new("ScreenGui")
  AnSit.Name = "AnSit"
  AnSit.Parent = game.CoreGui
@@ -200,11 +201,11 @@ local CheckFrame2 = Instance.new("Frame")
  CloseButton.Position = UDim2.new(0, 280, 0, 4)
  CloseButton.Size = UDim2.new(0, 23, 0, 23)
  CloseButton.ZIndex = 2
- CloseButton.Image = "rbxassetid://15338043379"
+ CloseButton.Image = "rbxassetid://"..A_Logo
  CloseButton.ImageColor3 = Color3.fromRGB(224,224,224)
  CloseButton.ImageRectOffset = Vector2.new(940, 784)
  CloseButton.ImageRectSize = Vector2.new(48, 48)
-
+end
 
 
 
@@ -238,7 +239,7 @@ CloseButton.MouseButton1Click:Connect(function()
                 end
         end)
 
-ProtectInstance(AnSiy)
+ProtectInstance(AnSit)
 ProtectInstance(CloseButton)
 
 
