@@ -104,6 +104,22 @@ function library:CreateWindow(name, version, icon)
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 local Page = Instance.new("Frame")
  Page.Name = "Page"
  Page.Parent = Main
@@ -111,8 +127,9 @@ local Page = Instance.new("Frame")
  Page.Position = UDim2.new(0.295726834, 0, 0.144050003, 0)
  Page.Size = UDim2.new(0, 330, 0, 280)
 
+
  local MainFramePage = Instance.new("ScrollingFrame")
- MainFramePage.Name = text.."_Page"
+ MainFramePage.Name = "MainFramePage"
  MainFramePage.Parent = PageList
  MainFramePage.Active = true
  MainFramePage.BackgroundColor3 = Color3.fromRGB(224,224,224)
@@ -121,6 +138,15 @@ local Page = Instance.new("Frame")
  MainFramePage.Size = UDim2.new(0, 400, 0, 245)
  MainFramePage.CanvasSize = UDim2.new(0, 0, 0, 0)
  MainFramePage.ScrollBarThickness = 0
+
+local PageList = Instance.new("Folder")
+ PageList.Name = "PageList"
+ PageList.Parent = MainPage
+
+
+
+
+
 
 
 local CheckFrame = Instance.new("Frame")
