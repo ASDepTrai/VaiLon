@@ -132,6 +132,15 @@ local Page = Instance.new("Frame")
  Page.Position = UDim2.new(0.295726834, 0, 0.144050003, 0)
  Page.Size = UDim2.new(0, 330, 0, 280)
 
+local MainPage = Instance.new("Frame")
+ MainPage.Name = "MainPage"
+ MainPage.Parent = Page
+ MainPage.ClipsDescendants = true
+ MainPage.BackgroundColor3 = Color3.fromRGB(224,224,224)
+ MainPage.BackgroundTransparency = 1.000
+ MainPage.Size = UDim2.new(0, 325, 0, 316)
+
+
 
 local PageList = Instance.new("Folder")
  PageList.Name = "PageList"
@@ -177,23 +186,23 @@ local CheckFrame2 = Instance.new("Frame")
 
 
 
-
-
-CloseButton.Name = "CloseButton"
-        CloseButton.Parent = CheckFrame2
-        CloseButton.BackgroundTransparency = 1.000
-        CloseButton.Position = UDim2.new(0, 280, 0, 4)
-        CloseButton.Size = UDim2.new(0, 23, 0, 23)
-        CloseButton.ZIndex = 2
-        CloseButton.Image = "rbxassetid://15338043379"
-        CloseButton.ImageRectOffset = Vector2.new(940, 748)
-        CloseButton.ImageRectSize = Vector2.new(48, 48)
-
+ CloseButton.Name = "AnSit"
+ CloseButton.Parent = CheckFrame2
+ CloseButton.BackgroundTransparency = 1.000
+ CloseButton.Position = UDim2.new(0, 280, 0, 4)
+ CloseButton.Size = UDim2.new(0, 23, 0, 23)
+ CloseButton.ZIndex = 2
+ CloseButton.Image = "rbxassetid://15338043379"
+ CloseButton.ImageRectOffset = Vector2.new(940, 784)
+ CloseButton.ImageRectSize = Vector2.new(48, 48)
 
 
 
 
-CloseButton.MouseButton1Click:Connect(function()
+
+
+
+AnSit.MouseButton1Click:Connect(function()
                 if not CloseButtonUi then
                         CloseButtonUi = true
                         if Window.Size == UDim2.new(0, 600,0, 400) then
