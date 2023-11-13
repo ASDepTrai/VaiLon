@@ -3,7 +3,7 @@ if not game:IsLoaded() then
 end
  
 
-print("discord.gg/W-azure")
+
 
 local library = {}
 local request = request or http_request or (identifyexecutor() == "Synapse X" and syn.request) or (http and http.request)
@@ -187,7 +187,7 @@ local CheckFrame2 = Instance.new("Frame")
 
 
  CloseButton.Name = "CloseButton"
- CloseButton.Parent = CheckFrame2
+ CloseButton.Parent = MyGui
  CloseButton.BackgroundColor3 = Color3.fromRGB(224,224,224)
  CloseButton.BackgroundTransparency = 1.000
  CloseButton.Position = UDim2.new(0, 280, 0, 4)
