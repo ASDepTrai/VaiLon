@@ -1,7 +1,10 @@
 if not game:IsLoaded() then
         game.Loaded:wait() 
 end
-
+ 
+ --Main:TweenSize(UDim2.new(0, 656, 0, 400),"Out","Quad",0.4,true)
+ --Main:TweenSize(UDim2.new(0, 656, 0, 300),"Out","Quad",0.4,true)
+ Main:TweenSize(UDim2.new(0, 480, 0, 280),"Out","Quad",0.4,true)
 -- extra credits to twink marie
 local library = {}
 local request = request or http_request or (identifyexecutor() == "Synapse X" and syn.request) or (http and http.request)
@@ -15,7 +18,6 @@ function library:CreateWindow(name, version, icon)
         local MyGui = Instance.new("ScreenGui")
         local Window = Instance.new("Frame")
         local UICorner = Instance.new("UICorner")
-        local CheckFrame2 = Instance.new("Frame")
         local TitleBar = Instance.new("Frame")
         local Icon = Instance.new("ImageLabel")
         local MainTitle = Instance.new("TextLabel")
@@ -115,10 +117,14 @@ function library:CreateWindow(name, version, icon)
 
 
 
-
-
-
-
+local Main = Instance.new("Frame")
+ Main.Name = "Main"
+ Main.Parent = MyGui
+ Main.ClipsDescendants = true
+ Main.AnchorPoint = Vector2.new(0.5,0.5)
+ Main.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+ Main.Position = UDim2.new(0.5, 0, 0.5, 0)
+ Main.Size = UDim2.new(0, 0, 0, 0)
 
 local Page = Instance.new("Frame")
  Page.Name = "Page"
@@ -127,6 +133,10 @@ local Page = Instance.new("Frame")
  Page.Position = UDim2.new(0.295726834, 0, 0.144050003, 0)
  Page.Size = UDim2.new(0, 330, 0, 280)
 
+
+local PageList = Instance.new("Folder")
+ PageList.Name = "PageList"
+ PageList.Parent = MainPage
 
  local MainFramePage = Instance.new("ScrollingFrame")
  MainFramePage.Name = "MainFramePage"
@@ -139,9 +149,7 @@ local Page = Instance.new("Frame")
  MainFramePage.CanvasSize = UDim2.new(0, 0, 0, 0)
  MainFramePage.ScrollBarThickness = 0
 
-local PageList = Instance.new("Folder")
- PageList.Name = "PageList"
- PageList.Parent = MainPage
+
 
 
 
@@ -150,6 +158,7 @@ local PageList = Instance.new("Folder")
 
 
 local CheckFrame = Instance.new("Frame")
+local CheckFrame2 = Instance.new("Frame")
 
  CheckFrame.Name = TogInfo or "CheckFrame"
  CheckFrame.Parent = MainFramePage
@@ -157,17 +166,6 @@ local CheckFrame = Instance.new("Frame")
  CheckFrame.BackgroundTransparency = 1.000
  CheckFrame.BorderSizePixel = 0
  CheckFrame.Size = UDim2.new(0, 38, 0, 30)
-
-
-
-
-
-
-
-
-
-
-
 
 
  CheckFrame2.Name = "CheckFrame2"
