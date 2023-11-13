@@ -114,8 +114,6 @@ function library:CreateWindow(name, version, icon)
 
 
 
-
-
  CheckFrame2.Name = "CheckFrame2"
  CheckFrame2.Parent = CheckFrame
  CheckFrame2.BackgroundColor3 = Color3.fromRGB(30,30,30)
@@ -135,7 +133,7 @@ CloseButton.Name = "CloseButton"
         CloseButton.Size = UDim2.new(0, 23, 0, 23)
         CloseButton.ZIndex = 2
         CloseButton.Image = "rbxassetid://15338043379"
-        CloseButton.ImageRectOffset = Vector2.new(940, 748)
+        CloseButton.ImageRectOffset = Vector2.new(940, 784)
         CloseButton.ImageRectSize = Vector2.new(48, 48)
 
 
