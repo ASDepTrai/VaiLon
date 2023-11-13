@@ -186,13 +186,15 @@ local CheckFrame2 = Instance.new("Frame")
 
 
 
- CloseButton.Name = "AnSit"
+ CloseButton.Name = "CloseButton"
  CloseButton.Parent = CheckFrame2
+ CloseButton.BackgroundColor3 = Color3.fromRGB(224,224,224)
  CloseButton.BackgroundTransparency = 1.000
  CloseButton.Position = UDim2.new(0, 280, 0, 4)
  CloseButton.Size = UDim2.new(0, 23, 0, 23)
  CloseButton.ZIndex = 2
  CloseButton.Image = "rbxassetid://15338043379"
+ CloseButton.ImageColor3 = Color3.fromRGB(224,224,224)
  CloseButton.ImageRectOffset = Vector2.new(940, 784)
  CloseButton.ImageRectSize = Vector2.new(48, 48)
 
@@ -202,7 +204,7 @@ local CheckFrame2 = Instance.new("Frame")
 
 
 
-AnSit.MouseButton1Click:Connect(function()
+CloseButton.MouseButton1Click:Connect(function()
                 if not CloseButtonUi then
                         CloseButtonUi = true
                         if Window.Size == UDim2.new(0, 600,0, 400) then
