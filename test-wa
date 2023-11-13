@@ -104,6 +104,36 @@ function library:CreateWindow(name, version, icon)
 
 
 
+local Page = Instance.new("Frame")
+ Page.Name = "Page"
+ Page.Parent = Main
+ Page.BackgroundColor3 = Color3.fromRGB(30,30,30)
+ Page.Position = UDim2.new(0.295726834, 0, 0.144050003, 0)
+ Page.Size = UDim2.new(0, 330, 0, 280)
+
+ local MainFramePage = Instance.new("ScrollingFrame")
+ MainFramePage.Name = text.."_Page"
+ MainFramePage.Parent = PageList
+ MainFramePage.Active = true
+ MainFramePage.BackgroundColor3 = Color3.fromRGB(224,224,224)
+ MainFramePage.BackgroundTransparency = 1.000
+ MainFramePage.BorderSizePixel = 0
+ MainFramePage.Size = UDim2.new(0, 400, 0, 245)
+ MainFramePage.CanvasSize = UDim2.new(0, 0, 0, 0)
+ MainFramePage.ScrollBarThickness = 0
+
+
+local CheckFrame = Instance.new("Frame")
+
+ CheckFrame.Name = TogInfo or "CheckFrame"
+ CheckFrame.Parent = MainFramePage
+ CheckFrame.BackgroundColor3 = Color3.fromRGB(150, 150, 150)
+ CheckFrame.BackgroundTransparency = 1.000
+ CheckFrame.BorderSizePixel = 0
+ CheckFrame.Size = UDim2.new(0, 38, 0, 30)
+
+
+
 
 
 
@@ -133,7 +163,7 @@ CloseButton.Name = "CloseButton"
         CloseButton.Size = UDim2.new(0, 23, 0, 23)
         CloseButton.ZIndex = 2
         CloseButton.Image = "rbxassetid://15338043379"
-        CloseButton.ImageRectOffset = Vector2.new(940, 784)
+        CloseButton.ImageRectOffset = Vector2.new(940, 748)
         CloseButton.ImageRectSize = Vector2.new(48, 48)
 
 
@@ -141,8 +171,8 @@ CloseButton.Name = "CloseButton"
 
 
 CloseButton.MouseButton1Click:Connect(function()
-                if not MinimizeGui then
-                        MinimizeGui = true
+                if not CloseButtonUi then
+                        CloseButtonUi = true
                         if Window.Size == UDim2.new(0, 600,0, 400) then
                                 TS:Create(Window, TweenInfo.new(0.25), {Size = UDim2.new(0, 600,0, 0)}):Play()
                                 repeat wait() until Window.Size == UDim2.new(0, 600,0, 0)
@@ -154,7 +184,7 @@ CloseButton.MouseButton1Click:Connect(function()
                                 end
                         end
                 else
-                        MinimizeGui = false
+                        CloseButtonUi = false
                         if Window.Size == UDim2.new(0, 600,0, 0) then
                                 if Page and Page.Visible == true then
                                         Page.Visible = false
