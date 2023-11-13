@@ -142,12 +142,12 @@ CloseButton.Name = "CloseButton"
 
 
 
-CloseButon.MouseButton1Click:Connect(function()
+CloseButton.MouseButton1Click:Connect(function()
                 if not MinimizeGui then
                         MinimizeGui = true
                         if Window.Size == UDim2.new(0, 600,0, 400) then
                                 TS:Create(Window, TweenInfo.new(0.25), {Size = UDim2.new(0, 600,0, 0)}):Play()
-                                repeat wait() until Window.Size == UDim2.new(0, 600,0, 32)
+                                repeat wait() until Window.Size == UDim2.new(0, 600,0, 0)
                                 if Page and Page.Visible == true then
                                         Page.Visible = false
                                 end
@@ -157,7 +157,7 @@ CloseButon.MouseButton1Click:Connect(function()
                         end
                 else
                         MinimizeGui = false
-                        if Window.Size == UDim2.new(0, 600,0, 32) then
+                        if Window.Size == UDim2.new(0, 600,0, 0) then
                                 if Page and Page.Visible == true then
                                         Page.Visible = false
                                 end
