@@ -1811,4 +1811,4 @@ ProtectInstance(CloseButton)
         return tabs
 end
 
-return libraryl
+return library
