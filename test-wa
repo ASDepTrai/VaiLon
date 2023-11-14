@@ -109,21 +109,15 @@ function library:CreateWindow(name, version, icon)
 
 
 
-
-
-
-
- CloseButton.Name = "CloseButton"
- CloseButton.Parent = MyGui
- CloseButton.BackgroundColor3 = Color3.fromRGB(224,224,224)
- CloseButton.BackgroundTransparency = 1.000
- CloseButton.Position = UDim2.new(0, 280, 0, 4)
- CloseButton.Size = UDim2.new(0, 23, 0, 23)
- CloseButton.ZIndex = 2
- CloseButton.Image = "rbxassetid://15338043379"
- CloseButton.ImageColor3 = Color3.fromRGB(224,224,224)
- CloseButton.ImageRectOffset = Vector2.new(100, 100)
- CloseButton.ImageRectSize = Vector2.new(48, 48)
+        CloseButton.Name = "CloseButton"
+        CloseButton.Parent = MyGui
+        CloseButton.BackgroundTransparency = 1.000
+        CloseButton.Position = UDim2.new(0, 280, 0, 4)
+        CloseButton.Size = UDim2.new(0, 23, 0, 23)
+        CloseButton.ZIndex = 2
+        CloseButton.Image = "rbxassetid://15338043379"
+        CloseButton.ImageRectOffset = Vector2.new(940, 784)
+        CloseButton.ImageRectSize = Vector2.new(48, 48)
 
 
 
@@ -1817,4 +1811,4 @@ ProtectInstance(CloseButton)
         return tabs
 end
 
-return library
+return libraryl
