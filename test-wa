@@ -113,81 +113,8 @@ function library:CreateWindow(name, version, icon)
 
 
 
-
-
-
-local Main = Instance.new("Frame")
- Main.Name = "Main"
- Main.Parent = MyGui
- Main.ClipsDescendants = true
- Main.AnchorPoint = Vector2.new(0.5,0.5)
- Main.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
- Main.Position = UDim2.new(0.5, 0, 0.5, 0)
- Main.Size = UDim2.new(0, 0, 0, 0)
-
-local Page = Instance.new("Frame")
- Page.Name = "Page"
- Page.Parent = Main
- Page.BackgroundColor3 = Color3.fromRGB(30,30,30)
- Page.Position = UDim2.new(0.295726834, 0, 0.144050003, 0)
- Page.Size = UDim2.new(0, 330, 0, 280)
-
-local MainPage = Instance.new("Frame")
- MainPage.Name = "MainPage"
- MainPage.Parent = Page
- MainPage.ClipsDescendants = true
- MainPage.BackgroundColor3 = Color3.fromRGB(224,224,224)
- MainPage.BackgroundTransparency = 1.000
- MainPage.Size = UDim2.new(0, 325, 0, 316)
-
-
-
-local PageList = Instance.new("Folder")
- PageList.Name = "PageList"
- PageList.Parent = MainPage
-
- local MainFramePage = Instance.new("ScrollingFrame")
- MainFramePage.Name = "MainFramePage"
- MainFramePage.Parent = PageList
- MainFramePage.Active = true
- MainFramePage.BackgroundColor3 = Color3.fromRGB(224,224,224)
- MainFramePage.BackgroundTransparency = 1.000
- MainFramePage.BorderSizePixel = 0
- MainFramePage.Size = UDim2.new(0, 400, 0, 245)
- MainFramePage.CanvasSize = UDim2.new(0, 0, 0, 0)
- MainFramePage.ScrollBarThickness = 0
-
-
-
-
-
-
-
-
-
-local CheckFrame = Instance.new("Frame")
-local CheckFrame2 = Instance.new("Frame")
-
- CheckFrame.Name = TogInfo or "CheckFrame"
- CheckFrame.Parent = MainFramePage
- CheckFrame.BackgroundColor3 = Color3.fromRGB(150, 150, 150)
- CheckFrame.BackgroundTransparency = 1.000
- CheckFrame.BorderSizePixel = 0
- CheckFrame.Size = UDim2.new(0, 38, 0, 30)
-
-
- CheckFrame2.Name = "CheckFrame2"
- CheckFrame2.Parent = CheckFrame
- CheckFrame2.BackgroundColor3 = Color3.fromRGB(30,30,30)
- CheckFrame2.BackgroundTransparency = 1
- CheckFrame2.BorderSizePixel = 0
- CheckFrame2.Position = UDim2.new(0, 3, 0, 0)
- CheckFrame2.Size = UDim2.new(0, 308, 0, 30)
-
-
-
  CloseButton.Name = "CloseButton"
- CloseButton.Parent = CheckFrame2
+ CloseButton.Parent = MyGui
  CloseButton.BackgroundColor3 = Color3.fromRGB(224,224,224)
  CloseButton.BackgroundTransparency = 1.000
  CloseButton.Position = UDim2.new(0, 280, 0, 4)
