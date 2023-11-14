@@ -116,15 +116,9 @@ function library:CreateWindow(name, version, icon)
 
 
 
-local AnSit = Instance.new("ScreenGui")
- AnSit.Name = "AnSit"
- AnSit.Parent = game.CoreGui
- AnSit.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-
-
 local Main = Instance.new("Frame")
  Main.Name = "Main"
- Main.Parent = AnSit
+ Main.Parent = MyGui
  Main.ClipsDescendants = true
  Main.AnchorPoint = Vector2.new(0.5,0.5)
  Main.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
