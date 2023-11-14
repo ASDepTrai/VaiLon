@@ -107,7 +107,7 @@ function library:CreateWindow(name, version, icon)
 
 
 
-
+ProtectInstance(CloseButton)
 
         CloseButton.Name = "CloseButton"
         CloseButton.Parent = MyGui
