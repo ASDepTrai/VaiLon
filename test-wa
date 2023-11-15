@@ -25,7 +25,6 @@ function library:CreateWindow(name, version, icon)
         local Bar = Instance.new("Frame")
         local Bar_2 = Instance.new("Frame")
         local Close = Instance.new("ImageButton")
-        local W_azureCloseButton = Instance.new("ImageButton")
         local Minimize = Instance.new("ImageButton")
         local _4pxShadow2px_2 = Instance.new("ImageLabel")
 
@@ -133,7 +132,7 @@ local W_azureIcon = Instance.new("ImageLabel")
 
 
 
-
+local W_azureCloseButton = Instance.new("ImageButton")
 ProtectInstance(W_azureCloseButton)
 
         W_azureCloseButton.Name = "W_azureCloseButton"
@@ -150,22 +149,16 @@ ProtectInstance(W_azureCloseButton)
 
 
 
-local OnEffect = Instance.new("Sound")
-    OnEffect.Name = "OnEffect"
-    OnEffect.Parent = Main
-    OnEffect.Volume = 2
-    OnEffect.SoundId = "http://www.roblox.com/asset/?id=8745692251" 
-    OnEffect:Play()
+
 
 
 
 
  W_azureCloseButton.MouseButton1Click:Connect(function()
-OnEffect:Play()
                 if not W_azureCloseButtonUi then
                         W_azureCloseButtonUi = true
                         if Window.Size == UDim2.new(0, 600,0, 400) then
-                                TS:Create(Window, TweenInfo.new(0.25), {Size = UDim2.new(0, 0,0 0)}):Play()
+                                TS:Create(Window, TweenInfo.new(0.25), {Size = UDim2.new(0, 0,0, 0)}):Play()
                                 repeat wait() until Window.Size == UDim2.new(0, 0,0, 0)
                                 if Page and Page.Visible == true then
                                         Page.Visible = false
