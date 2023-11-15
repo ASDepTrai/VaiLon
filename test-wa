@@ -108,7 +108,7 @@ ProtectInstance(AnSit)
 ProtectInstance(CloseButton)
 
        
-        AnSit.Name = "Window"
+        AnSit.Name = "AnSit"
         AnSit.Parent = MyGui
         AnSit.BackgroundColor3 = Color3.fromRGB(240, 255, 255)
         AnSit.Position = UDim2.new(0, 280, 0, 4)
