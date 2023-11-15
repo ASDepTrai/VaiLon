@@ -154,10 +154,10 @@ ProtectInstance(W_azureCloseButton)
 
 
 W_azureCloseButton.MouseButton1Click:Connect(function()
+Instance.new("Sound", game:GetService(SoundService")).SoundId = "rbxassetid://1788243907"; game:GetService("SoundService").Sound:Play()
                 if not W_azureCloseButtonUi then
                         W_azureCloseButtonUi = true
                         if Window.Size == UDim2.new(0, 600,0, 400) then
-                             Instance.new("Sound", game:GetService(SoundService")).SoundId = "rbxassetid://8745692251"; game:GetService("SoundService").Sound:Play()
                                 TS:Create(Window, TweenInfo.new(0.25), {Size = UDim2.new(0, 0,0, 0)}):Play()
                                 repeat wait() until Window.Size == UDim2.new(0, 0,0, 0)
                                 if Page and Page.Visible == true then
@@ -176,7 +176,6 @@ W_azureCloseButton.MouseButton1Click:Connect(function()
                                 if Tabs and Tabs.Visible == true then
                                         Tabs.Visible = false
                                 end
-                               Instance.new("Sound", game:GetService(SoundService")).SoundId = "rbxassetid://8745692251"; game:GetService("SoundService").Sound:Play()
                                 TS:Create(Window, TweenInfo.new(0.25), {Size = UDim2.new(0, 600,0, 400)}):Play()
                         end
                 end
