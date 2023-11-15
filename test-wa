@@ -1769,7 +1769,7 @@ end)
                                 Sample_2.ImageColor3 = Color3.fromRGB(203, 203, 203)
                                 Sample_2.ImageTransparency = 0.700
 
-                                Instance.new("Sound", game:GetService("SoundService")).SoundId = "rbxassetid://1788243907"; game:GetService("SoundService").Sound:Play()
+                                Instance.new("Sound", game:GetService("SoundService")).SoundId = "rbxassetid:///9042807094"; game:GetService("SoundService").Sound:Play()
 
                                 TS:Create(Notification2, TweenInfo.new(0.3, Enum.EasingStyle.Linear),{
                                         Position = UDim2.new(
