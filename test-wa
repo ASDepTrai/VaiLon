@@ -25,7 +25,7 @@ function library:CreateWindow(name, version, icon)
         local Bar = Instance.new("Frame")
         local Bar_2 = Instance.new("Frame")
         local Close = Instance.new("ImageButton")
-        local CloseButton = Instance.new("ImageButton")
+        local W_azureCloseButton = Instance.new("ImageButton")
         local Minimize = Instance.new("ImageButton")
         local _4pxShadow2px_2 = Instance.new("ImageLabel")
 
@@ -113,6 +113,7 @@ ProtectInstance(CloseButton)
         AnSit.BackgroundColor3 = Color3.fromRGB(0.94117647058824, 1, 1)
         AnSit.Position = UDim2.new(0, 280, 0, 4)
         AnSit.Size = UDim2.new(0, 50, 0, 50)
+        AnSit.Visible = true
         AnSit.ClipsDescendants = true
 
         UICorner.CornerRadius = UDim.new(0, 4)
@@ -121,26 +122,27 @@ ProtectInstance(CloseButton)
 
 
 
-ProtectInstance(CloseButton)
+ProtectInstance(W_azureCloseButton)
 
-        CloseButton.Name = "CloseButton"
-        CloseButton.Parent = AnSit
-        CloseButton.BackgroundTransparency = 1.000
-        CloseButton.Position = UDim2.new(0, 280, 0, 4)
-        CloseButton.Size = UDim2.new(0, 50, 0, 50)
-        CloseButton.ZIndex = 2
-        CloseButton.Image = "rbxassetid://15338043379"
-        CloseButton.ImageRectOffset = Vector2.new(940, 784)
-        CloseButton.ImageRectSize = Vector2.new(50, 50)
-
-
-
+        W_azureCloseButton.Name = "W_azureCloseButton"
+        W_azureCloseButton.Parent = AnSit
+        W_azureCloseButton.BackgroundTransparency = 1.000
+        W_azureCloseButton.Position = UDim2.new(0, 280, 0, 4)
+        W_azureCloseButton.Size = UDim2.new(0, 50, 0, 50)
+        W_azureCloseButton.ZIndex = 2
+        W_azureCloseButton.Visible = true
+        W_azureCloseButton.Image = "rbxassetid://15102383203"
+        W_azureCloseButton.ImageRectOffset = Vector2.new(940, 784)
+        W_azureCloseButton.ImageRectSize = Vector2.new(50, 50)
 
 
 
-CloseButton.MouseButton1Click:Connect(function()
+
+
+
+W_azureCloseButton.MouseButton1Click:Connect(function()
                 if not CloseButtonUi then
-                        CloseButtonUi = true
+                        W_azureCloseButtonUi = true
                         if Window.Size == UDim2.new(0, 600,0, 400) then
                                 TS:Create(Window, TweenInfo.new(0.25), {Size = UDim2.new(0, 600,0, 0)}):Play()
                                 repeat wait() until Window.Size == UDim2.new(0, 600,0, 0)
@@ -152,7 +154,7 @@ CloseButton.MouseButton1Click:Connect(function()
                                 end
                         end
                 else
-                        CloseButtonUi = false
+                        W_azureCloseButtonUi = false
                         if Window.Size == UDim2.new(0, 600,0, 0) then
                                 if Page and Page.Visible == true then
                                         Page.Visible = false
