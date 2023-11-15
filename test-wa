@@ -126,7 +126,7 @@ local W_azureIcon = Instance.new("ImageLabel")
         W_azureIcon.Parent = MyGui
         W_azureIcon.BackgroundColor3 = Color3.fromRGB(1, 1, 1)
         W_azureIcon.BackgroundTransparency = 1.000
-        W_azureIcon.Position = UDim2.new(0, 279, 0, 4)
+        W_azureIcon.Position = UDim2.new(0, 278, 0, 5)
         W_azureIcon.Size = UDim2.new(0, 45, 0, 45)
         W_azureIcon.Image = "rbxassetid://15361713544"
         W_azureIcon.ImageColor3 = Color3.fromRGB(242, 243, 243)
@@ -150,19 +150,14 @@ ProtectInstance(W_azureCloseButton)
 
 
 
-local OnEffect = Instance.new("Sound")
-    OnEffect.Name = "OnEffect"
-    OnEffect.Parent = Main
-    OnEffect.Volume = 1.5
-    OnEffect.SoundId = "http://www.roblox.com/asset/?id=8745692251" 
-    OnEffect:Play() 
+ 
 
 
 W_azureCloseButton.MouseButton1Click:Connect(function()
                 if not W_azureCloseButtonUi then
                         W_azureCloseButtonUi = true
                         if Window.Size == UDim2.new(0, 600,0, 400) then
-                             OnEffect:Play()
+                             Instance.new("Sound", game:GetService(SoundService")).SoundId = "rbxassetid://8745692251"; game:GetService("SoundService").Sound:Play()
                                 TS:Create(Window, TweenInfo.new(0.25), {Size = UDim2.new(0, 0,0, 0)}):Play()
                                 repeat wait() until Window.Size == UDim2.new(0, 0,0, 0)
                                 if Page and Page.Visible == true then
@@ -181,7 +176,7 @@ W_azureCloseButton.MouseButton1Click:Connect(function()
                                 if Tabs and Tabs.Visible == true then
                                         Tabs.Visible = false
                                 end
-                               OnEffect:Play()
+                               Instance.new("Sound", game:GetService(SoundService")).SoundId = "rbxassetid://8745692251"; game:GetService("SoundService").Sound:Play()
                                 TS:Create(Window, TweenInfo.new(0.25), {Size = UDim2.new(0, 600,0, 400)}):Play()
                         end
                 end
@@ -1767,7 +1762,7 @@ W_azureCloseButton.MouseButton1Click:Connect(function()
                                 Sample_2.ImageColor3 = Color3.fromRGB(203, 203, 203)
                                 Sample_2.ImageTransparency = 0.700
 
-                                Instance.new("Sound", game:GetService("SoundService")).SoundId = "rbxassetid://1788243907"; game:GetService("SoundService").Sound:Play()
+                                Instance.new("Sound", game:GetService(SoundService")).SoundId = "rbxassetid://1788243907"; game:GetService("SoundService").Sound:Play()
 
                                 TS:Create(Notification2, TweenInfo.new(0.3, Enum.EasingStyle.Linear),{
                                         Position = UDim2.new(
