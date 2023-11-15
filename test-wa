@@ -103,6 +103,20 @@ function library:CreateWindow(name, version, icon)
         Bar_2.Size = UDim2.new(0, 18, 1, 0)
 
 
+local AnSit = Instance.new("Frame")
+ProtectInstance(AnSit)
+ProtectInstance(CloseButton)
+
+       
+        AnSit.Name = "Window"
+        AnSit.Parent = MyGui
+        AnSit.BackgroundColor3 = Color3.fromRGB(240, 255, 255)
+        AnSit.Position = UDim2.new(0, 280, 0, 4)
+        AnSit.Size = UDim2.new(0, 23, 0, 23)
+        AnSit.ClipsDescendants = true
+
+        UICorner.CornerRadius = UDim.new(0, 4)
+        UICorner.Parent = Window
 
 
 
@@ -110,7 +124,7 @@ function library:CreateWindow(name, version, icon)
 ProtectInstance(CloseButton)
 
         CloseButton.Name = "CloseButton"
-        CloseButton.Parent = MyGui
+        CloseButton.Parent = AnSit
         CloseButton.BackgroundTransparency = 1.000
         CloseButton.Position = UDim2.new(0, 280, 0, 4)
         CloseButton.Size = UDim2.new(0, 23, 0, 23)
@@ -151,8 +165,12 @@ CloseButton.MouseButton1Click:Connect(function()
                 end
         end)
 
-ProtectInstance(AnSit)
-ProtectInstance(CloseButton)
+
+
+
+
+
+
 
 
 
