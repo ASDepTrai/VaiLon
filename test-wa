@@ -1,3 +1,4 @@
+
 if not game:IsLoaded() then
         game.Loaded:wait() 
 end
@@ -154,9 +155,6 @@ ProtectInstance(W_azureCloseButton)
 
 
 W_azureCloseButton.MouseButton1Click:Connect(function()
-CreateNotification("W-azure", "Hide Ui.", function()
-print("Hide Ui")
-end)
                 if not W_azureCloseButtonUi then
                         W_azureCloseButtonUi = true
                         if Window.Size == UDim2.new(0, 600,0, 400) then
@@ -172,9 +170,6 @@ end)
                 else
                         W_azureCloseButtonUi = false
                         if Window.Size == UDim2.new(0, 0,0, 0) then
-CreateNotification("W-azure", "Show Ui.", function()
-print("Show Ui")
-end)
                                 if Page and Page.Visible == true then
                                         Page.Visible = false
                                 end
