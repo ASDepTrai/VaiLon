@@ -125,7 +125,7 @@ ProtectInstance(CloseButton)
 ProtectInstance(W_azureCloseButton)
 
         W_azureCloseButton.Name = "W_azureCloseButton"
-        W_azureCloseButton.Parent = AnSit
+        W_azureCloseButton.Parent = MyGui
         W_azureCloseButton.BackgroundTransparency = 1.000
         W_azureCloseButton.Position = UDim2.new(0, 280, 0, 4)
         W_azureCloseButton.Size = UDim2.new(0, 50, 0, 50)
