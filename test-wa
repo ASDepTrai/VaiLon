@@ -110,13 +110,13 @@ ProtectInstance(CloseButton)
        
         AnSit.Name = "AnSit"
         AnSit.Parent = MyGui
-        AnSit.BackgroundColor3 = Color3.fromRGB(240, 255, 255)
+        AnSit.BackgroundColor3 = Color3.fromRGB(0.94117647058824, 1, 1)
         AnSit.Position = UDim2.new(0, 280, 0, 4)
         AnSit.Size = UDim2.new(0, 50, 0, 50)
         AnSit.ClipsDescendants = true
 
         UICorner.CornerRadius = UDim.new(0, 4)
-        UICorner.Parent = Window
+        UICorner.Parent = AnSit
 
 
 
@@ -131,7 +131,7 @@ ProtectInstance(CloseButton)
         CloseButton.ZIndex = 2
         CloseButton.Image = "rbxassetid://15338043379"
         CloseButton.ImageRectOffset = Vector2.new(940, 784)
-        CloseButton.ImageRectSize = Vector2.new(48, 48)
+        CloseButton.ImageRectSize = Vector2.new(50, 50)
 
 
 
