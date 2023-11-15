@@ -104,7 +104,33 @@ function library:CreateWindow(name, version, icon)
 
 
 
---
+local AnSit = Instance.new("Frame")
+ProtectInstance(AnSit)
+ProtectInstance(W_azureCloseButton)
+
+       
+        AnSit.Name = "AnSit"
+        AnSit.Parent = MyGui
+        AnSit.BackgroundColor3 = Color3.fromRGB(0.94117647058824, 1, 1)
+        AnSit.Position = UDim2.new(0, 280, 0, 4)
+        AnSit.Size = UDim2.new(0, 50, 0, 50)
+        AnSit.Visible = true
+        AnSit.ClipsDescendants = true
+
+        UICorner.CornerRadius = UDim.new(0, 4)
+        UICorner.Parent = AnSit
+
+local W_azureIcon = Instance.new("ImageLabel")
+
+        W_azureIcon.Name = "Icon"
+        W_azureIcon.Parent = MyGui
+        W_azureIcon.BackgroundColor3 = Color3.fromRGB(1, 1, 1)
+        W_azureIcon.BackgroundTransparency = 1.000
+        W_azureIcon.Position = UDim2.new(0, 280, 0, 4)
+        W_azureIcon.Size = UDim2.new(0, 50, 0, 50)
+        W_azureIcon.Image = "rbxassetid://15338043379"
+        W_azureIcon.ImageColor3 = Color3.fromRGB(50, 60, 260)
+
 
 
 
