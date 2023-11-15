@@ -1,4 +1,3 @@
-
 if not game:IsLoaded() then
         game.Loaded:wait() 
 end
@@ -151,14 +150,22 @@ ProtectInstance(W_azureCloseButton)
 
 
 
- 
+local OnEffect = Instance.new("Sound")
+    OnEffect.Name = "OnEffect"
+    OnEffect.Parent = Main
+    OnEffect.Volume = Library["theme"]["SoundVolume"]
+    OnEffect.SoundId = "http://www.roblox.com/asset/?id=8745692251" 
+    OnEffect:Play()
 
 
-W_azureCloseButton.MouseButton1Click:Connect(function()
+
+
+ W_azureCloseButton.MouseButton1Click:Connect(function()
                 if not W_azureCloseButtonUi then
                         W_azureCloseButtonUi = true
                         if Window.Size == UDim2.new(0, 600,0, 400) then
-                                TS:Create(Window, TweenInfo.new(0.25), {Size = UDim2.new(0, 0,0, 0)}):Play()
+                                OnEffect:Play()
+                                TS:Create(Window, TweenInfo.new(0.25), {Size = UDim2.new(0, 0,0 0)}):Play()
                                 repeat wait() until Window.Size == UDim2.new(0, 0,0, 0)
                                 if Page and Page.Visible == true then
                                         Page.Visible = false
@@ -176,10 +183,13 @@ W_azureCloseButton.MouseButton1Click:Connect(function()
                                 if Tabs and Tabs.Visible == true then
                                         Tabs.Visible = false
                                 end
+                                OnEffect:Play()
                                 TS:Create(Window, TweenInfo.new(0.25), {Size = UDim2.new(0, 600,0, 400)}):Play()
                         end
                 end
         end)
+
+
 
 
 
@@ -1761,7 +1771,7 @@ W_azureCloseButton.MouseButton1Click:Connect(function()
                                 Sample_2.ImageColor3 = Color3.fromRGB(203, 203, 203)
                                 Sample_2.ImageTransparency = 0.700
 
-                                Instance.new("Sound", game:GetService(SoundService")).SoundId = "rbxassetid://1788243907"; game:GetService("SoundService").Sound:Play()
+                                Instance.new("Sound", game:GetService("SoundService")).SoundId = "rbxassetid://1788243907"; game:GetService("SoundService").Sound:Play()
 
                                 TS:Create(Notification2, TweenInfo.new(0.3, Enum.EasingStyle.Linear),{
                                         Position = UDim2.new(
