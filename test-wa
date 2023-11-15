@@ -125,7 +125,7 @@ local W_azureIcon = Instance.new("ImageLabel")
         W_azureIcon.Parent = MyGui
         W_azureIcon.BackgroundColor3 = Color3.fromRGB(1, 1, 1)
         W_azureIcon.BackgroundTransparency = 1.000
-        W_azureIcon.Position = UDim2.new(0, 278, 0, 5)
+        W_azureIcon.Position = UDim2.new(0, 280, 0, 4)
         W_azureIcon.Size = UDim2.new(0, 45, 0, 45)
         W_azureIcon.Image = "rbxassetid://15361713544"
         W_azureIcon.ImageColor3 = Color3.fromRGB(242, 243, 243)
@@ -158,6 +158,9 @@ ProtectInstance(W_azureCloseButton)
                 if not W_azureCloseButtonUi then
                         W_azureCloseButtonUi = true
                         if Window.Size == UDim2.new(0, 600,0, 400) then
+CreateNotification("W-azure", "Hide Ui", function()
+print("Hide Ui")
+end)
                                 TS:Create(Window, TweenInfo.new(0.25), {Size = UDim2.new(0, 0,0, 0)}):Play()
                                 repeat wait() until Window.Size == UDim2.new(0, 0,0, 0)
                                 if Page and Page.Visible == true then
@@ -170,6 +173,9 @@ ProtectInstance(W_azureCloseButton)
                 else
                         W_azureCloseButtonUi = false
                         if Window.Size == UDim2.new(0, 0,0, 0) then
+CreateNotification("W-azure", "Show Ui", function()
+print("Show Ui")
+end)
                                 if Page and Page.Visible == true then
                                         Page.Visible = false
                                 end
