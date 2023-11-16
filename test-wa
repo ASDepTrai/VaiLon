@@ -111,21 +111,11 @@ function library:CreateWindow(name, version, icon)
 
 
 
-local AnSit = Instance.new("Frame")
-ProtectInstance(AnSit)
+
+
 ProtectInstance(W_azureCloseButton)
 
-       
-        AnSit.Name = "AnSit"
-        AnSit.Parent = MyGui
-        AnSit.BackgroundColor3 = Color3.fromRGB(0.94117647058824, 1, 1)
-        AnSit.Position = UDim2.new(0, 120, 0, 90)
-        AnSit.Size = UDim2.new(0, 50, 0, 50)
-        AnSit.Visible = true
-        AnSit.ClipsDescendants = true
 
-        UICorner.CornerRadius = UDim.new(0, 4)
-        UICorner.Parent = AnSit
 
 local W_azureFrame1 = Instance.new("ImageLabel")
 
@@ -148,7 +138,7 @@ local W_azureIcon = Instance.new("ImageLabel")
         W_azureIcon.BackgroundColor3 = Color3.fromRGB(1, 1, 1)
         W_azureIcon.BackgroundTransparency = 1.000
         W_azureIcon.Position = UDim2.new(0, 122, 0, 94)
-        W_azureIcon.Size = UDim2.new(0, 45, 0, 45)
+        W_azureIcon.Size = UDim2.new(0, 50, 0, 50)
         W_azureIcon.Image = "rbxassetid://15361713544"
         W_azureIcon.ImageColor3 = Color3.fromRGB(242, 243, 243)
 
@@ -217,8 +207,8 @@ local W_azureFrame = Instance.new("ImageLabel")
         W_azureFrame.Parent = MyGui
         W_azureFrame.BackgroundColor3 = Color3.fromRGB(1, 1, 1)
         W_azureFrame.BackgroundTransparency = 1.000
-        W_azureFrame.Position = UDim2.new(0, 122, 0, 94)
-        W_azureFrame.Size = UDim2.new(0, 55, 0, 55)
+        W_azureFrame.Position = UDim2.new(0, 112, 0, 82)
+        W_azureFrame.Size = UDim2.new(0, 67, 0, 67)
         W_azureFrame.Image = "rbxassetid://15368236811"
         W_azureFrame.ImageColor3 = Color3.fromRGB(242, 243, 243)
 
