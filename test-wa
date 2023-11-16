@@ -139,7 +139,7 @@ local W_azureIcon = Instance.new("ImageLabel")
         W_azureIcon.BackgroundTransparency = 1.000
         W_azureIcon.Position = UDim2.new(0, 124, 0, 94)
         W_azureIcon.Size = UDim2.new(0, 42, 0, 42)
-        W_azureIcon.Image = "rbxassetid://15368410534"
+        W_azureIcon.Image = "rbxassetid://15368457963"
         W_azureIcon.ImageColor3 = Color3.fromRGB(242, 243, 243)
 
 
