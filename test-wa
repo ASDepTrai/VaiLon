@@ -123,8 +123,8 @@ local W_azureFrame1 = Instance.new("ImageLabel")
         W_azureFrame1.Parent = MyGui
         W_azureFrame1.BackgroundColor3 = Color3.fromRGB(1, 1, 1)
         W_azureFrame1.BackgroundTransparency = 1.000
-        W_azureFrame1.Position = UDim2.new(0, 120, 0, 90)
-        W_azureFrame1.Size = UDim2.new(0, 55, 0, 55)
+        W_azureFrame1.Position = UDim2.new(0, 110, 0, 80)
+        W_azureFrame1.Size = UDim2.new(0, 70, 0, 70)
         W_azureFrame1.Image = "rbxassetid://15368317202"
         W_azureFrame1.ImageColor3 = Color3.fromRGB(242, 243, 243)
 
@@ -137,8 +137,8 @@ local W_azureIcon = Instance.new("ImageLabel")
         W_azureIcon.Parent = MyGui
         W_azureIcon.BackgroundColor3 = Color3.fromRGB(1, 1, 1)
         W_azureIcon.BackgroundTransparency = 1.000
-        W_azureIcon.Position = UDim2.new(0, 122, 0, 94)
-        W_azureIcon.Size = UDim2.new(0, 45, 0, 45)
+        W_azureIcon.Position = UDim2.new(0, 124, 0, 94)
+        W_azureIcon.Size = UDim2.new(0, 42, 0, 42)
         W_azureIcon.Image = "rbxassetid://15361713544"
         W_azureIcon.ImageColor3 = Color3.fromRGB(242, 243, 243)
 
