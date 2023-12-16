@@ -24,7 +24,6 @@ function library:CreateWindow(name, version, icon)
         local UIGradient = Instance.new("UIGradient")
         local Bar = Instance.new("Frame")
         local Bar_2 = Instance.new("Frame")
-        local Close = Instance.new("ImageButton")
         local Minimize = Instance.new("ImageButton")
         local _4pxShadow2px_2 = Instance.new("ImageLabel")
 
@@ -215,15 +214,7 @@ end)
 
 
 
-        Close.Name = "Close"
-        Close.Parent = TitleBar
-        Close.BackgroundTransparency = 1.000
-        Close.Position = UDim2.new(0.953333378, 0, 0.0666666627, 0)
-        Close.Size = UDim2.new(0, 25, 0, 25)
-        Close.ZIndex = 2
-        Close.Image = "rbxassetid://3926305904"
-        Close.ImageRectOffset = Vector2.new(284, 4)
-        Close.ImageRectSize = Vector2.new(24, 24)
+        
 
         Minimize.Name = "Minimize"
         Minimize.Parent = TitleBar
@@ -246,18 +237,7 @@ end)
         _4pxShadow2px_2.ScaleType = Enum.ScaleType.Slice
         _4pxShadow2px_2.SliceCenter = Rect.new(17, 17, 283, 283)
 
-        Close.MouseButton1Click:Connect(function()
-                TS:Create(Window, TweenInfo.new(0.5), {Size = UDim2.new(0, 600, 0, 0)}):Play()
-                repeat
-                        wait()
-                until Window.Size == UDim2.new(0, 600, 0, 0)
-                wait(0.1)
-                TS:Create(Window, TweenInfo.new(0.5), {Size = UDim2.new(0, 0, 0, 0)}):Play()
-                repeat
-                        wait()
-                until Window.Size == UDim2.new(0, 0, 0, 0)
-                MyGui:Remove()
-        end)
+       
 
         Minimize.MouseButton1Click:Connect(function()
                 if not MinimizeGui then
